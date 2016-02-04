@@ -1,17 +1,17 @@
 [
     {
         "name": "magento/magento-composer-installer",
-        "version": "0.1.5",
-        "version_normalized": "0.1.5.0",
+        "version": "0.1.6",
+        "version_normalized": "0.1.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/magento/magento-composer-installer.git",
-            "reference": "1b33917bfc3f4a0856276dcbe46ce35362f50fc3"
+            "reference": "5b5d29ebe060bc6754c2999206923489db8ca641"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/magento/magento-composer-installer/zipball/1b33917bfc3f4a0856276dcbe46ce35362f50fc3",
-            "reference": "1b33917bfc3f4a0856276dcbe46ce35362f50fc3",
+            "url": "https://api.github.com/repos/magento/magento-composer-installer/zipball/5b5d29ebe060bc6754c2999206923489db8ca641",
+            "reference": "5b5d29ebe060bc6754c2999206923489db8ca641",
             "shasum": ""
         },
         "require": {
@@ -26,7 +26,7 @@
             "squizlabs/php_codesniffer": "1.4.7",
             "symfony/process": "*"
         },
-        "time": "2015-09-14 19:59:55",
+        "time": "2016-01-25 22:04:43",
         "type": "composer-plugin",
         "extra": {
             "composer-command-registry": [
@@ -79,13 +79,13 @@
     },
     {
         "name": "magento/framework",
-        "version": "100.0.3",
-        "version_normalized": "100.0.3.0",
+        "version": "100.0.4",
+        "version_normalized": "100.0.4.0",
         "dist": {
             "type": "zip",
-            "url": "https://repo.magento.com/archives/magento/framework/magento-framework-100.0.3.0.zip",
+            "url": "https://repo.magento.com/archives/magento/framework/magento-framework-100.0.4.0.zip",
             "reference": null,
-            "shasum": "fea46182cee0745fd257fcfafa4e0e4125348c2c"
+            "shasum": "4281e1e0fc1a3fe399e4e2dbb7e120afd2d00239"
         },
         "require": {
             "ext-curl": "*",
@@ -2886,35 +2886,35 @@
     },
     {
         "name": "justinrainbow/json-schema",
-        "version": "v1.6.0",
-        "version_normalized": "1.6.0.0",
+        "version": "1.6.1",
+        "version_normalized": "1.6.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/justinrainbow/json-schema.git",
-            "reference": "f9e27c3e202faf14fd581ef41355d83bb4b7eb7d"
+            "reference": "cc84765fb7317f6b07bd8ac78364747f95b86341"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/f9e27c3e202faf14fd581ef41355d83bb4b7eb7d",
-            "reference": "f9e27c3e202faf14fd581ef41355d83bb4b7eb7d",
+            "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/cc84765fb7317f6b07bd8ac78364747f95b86341",
+            "reference": "cc84765fb7317f6b07bd8ac78364747f95b86341",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.2"
+            "php": ">=5.3.29"
         },
         "require-dev": {
             "json-schema/json-schema-test-suite": "1.1.0",
             "phpdocumentor/phpdocumentor": "~2",
             "phpunit/phpunit": "~3.7"
         },
-        "time": "2016-01-06 14:37:04",
+        "time": "2016-01-25 15:43:01",
         "bin": [
             "bin/validate-json"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.4.x-dev"
+                "dev-master": "1.6.x-dev"
             }
         },
         "installation-source": "dist",
@@ -6603,13 +6603,13 @@
     },
     {
         "name": "magento/magento2-base",
-        "version": "2.0.1",
-        "version_normalized": "2.0.1.0",
+        "version": "2.0.2",
+        "version_normalized": "2.0.2.0",
         "dist": {
             "type": "zip",
-            "url": "https://repo.magento.com/archives/magento/magento2-base/magento-magento2-base-2.0.1.0.zip",
+            "url": "https://repo.magento.com/archives/magento/magento2-base/magento-magento2-base-2.0.2.0.zip",
             "reference": null,
-            "shasum": "b3c6eafc16c92488f9d60710e4eb88b921090aac"
+            "shasum": "4e081ce6a9ffc7b908fd99e3b3939e4357b40d33"
         },
         "require": {
             "braintree/braintree_php": "2.39.0",
@@ -7157,13 +7157,13 @@
     },
     {
         "name": "magento/product-community-edition",
-        "version": "2.0.1",
-        "version_normalized": "2.0.1.0",
+        "version": "2.0.2",
+        "version_normalized": "2.0.2.0",
         "dist": {
             "type": "zip",
-            "url": "https://repo.magento.com/archives/magento/product-community-edition/magento-product-community-edition-2.0.1.0.zip",
+            "url": "https://repo.magento.com/archives/magento/product-community-edition/magento-product-community-edition-2.0.2.0.zip",
             "reference": null,
-            "shasum": "7efa9b0d9f9c7990749d87a27a6d49749d4f3c7f"
+            "shasum": "ecd5d13fcba9de1a1e81955cbb0d1451dcc7b01f"
         },
         "require": {
             "braintree/braintree_php": "2.39.0",
@@ -7184,7 +7184,7 @@
             "ext-zip": "*",
             "lib-libxml": "*",
             "magento/composer": "~1.0.0",
-            "magento/framework": "100.0.3",
+            "magento/framework": "100.0.4",
             "magento/language-de_de": "100.0.3",
             "magento/language-en_us": "100.0.3",
             "magento/language-es_es": "100.0.3",
@@ -7193,7 +7193,7 @@
             "magento/language-pt_br": "100.0.3",
             "magento/language-zh_hans_cn": "100.0.3",
             "magento/magento-composer-installer": "*",
-            "magento/magento2-base": "2.0.1",
+            "magento/magento2-base": "2.0.2",
             "magento/module-admin-notification": "100.0.3",
             "magento/module-advanced-pricing-import-export": "100.0.3",
             "magento/module-authorization": "100.0.3",
@@ -8668,17 +8668,17 @@
     },
     {
         "name": "fabpot/php-cs-fixer",
-        "version": "v1.11",
-        "version_normalized": "1.11.0.0",
+        "version": "v1.11.1",
+        "version_normalized": "1.11.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-            "reference": "bd3ec2c2b774e0e127ac2c737ec646d9cf2f9eef"
+            "reference": "2c9f8298181f059c5077abda78019b9a0c9a7cc0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/bd3ec2c2b774e0e127ac2c737ec646d9cf2f9eef",
-            "reference": "bd3ec2c2b774e0e127ac2c737ec646d9cf2f9eef",
+            "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2c9f8298181f059c5077abda78019b9a0c9a7cc0",
+            "reference": "2c9f8298181f059c5077abda78019b9a0c9a7cc0",
             "shasum": ""
         },
         "require": {
@@ -8695,7 +8695,7 @@
         "require-dev": {
             "satooshi/php-coveralls": "0.7.*@dev"
         },
-        "time": "2015-12-01 22:34:33",
+        "time": "2016-01-20 19:00:28",
         "bin": [
             "php-cs-fixer"
         ],

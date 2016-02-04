@@ -25,7 +25,7 @@ final class IntegrationTest extends AbstractIntegrationTest
      */
     protected static function getFixturesDir()
     {
-        return __DIR__.'/Fixtures/Integration';
+        return __DIR__.DIRECTORY_SEPARATOR.'Fixtures'.DIRECTORY_SEPARATOR.'Integration';
     }
 
     /**
@@ -33,6 +33,6 @@ final class IntegrationTest extends AbstractIntegrationTest
      */
     protected static function getTempFile()
     {
-        return self::getFixturesDir().'/tmp/tmp.php';
+        return self::getFixturesDir().DIRECTORY_SEPARATOR.'.tmp.php';
     }
 }

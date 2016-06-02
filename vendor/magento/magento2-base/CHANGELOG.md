@@ -1,3 +1,62 @@
+2.0.7
+=============
+* GitHub requests:
+    * [#2984](https://github.com/magento/magento2/issues/2984) -- Payment config settings not decrypted when used?
+
+2.0.6
+=============
+* Functional fixes:
+    * Fixed issue with Redis sessions.
+    * Fixed issue with Varnish cache on GoDaddy.
+
+* Security fixes:
+    * This release contains several security fixes. We describe each issue in detail in the Magento Security Center (https://www.magento.com/security).
+
+* Enhancements:
+    * Management of file ownership and permissions have been made more flexible.
+    * Support for using the Redis adapter to provide session storage.
+
+2.0.5
+=============
+* Fixed bugs:
+    * Fixed issue with HTML minification and comments
+    * Fixed issue with cached CAPTCHA
+    * Fixed issue with images not changing on swatches
+    * Fixed issue with admin URL being indexed in search engines
+    * Fixed issue with viewing products from shared wishlists
+    * Fixed inconsistent data during installation
+    * Fixed issue with saving custom customer attributes during checkout
+    * Fixed issue with multiple newsletter subscriptions for same email
+    * Fixed import issue for products with store code
+* GitHub requests:
+    * [#2795](https://github.com/magento/magento2/pull/2795) -- Fix Notice: Undefined property: Magento\Backend\Helper\Dashboard\Order::$_storeManager
+    * [#2989](https://github.com/magento/magento2/issues/2989) -- Custom Options not working after editing product
+* Various improvements:
+    * Improved export performance
+    * Fixed several performance issue with duplicated queries on category and CMS pages
+
+2.0.3
+=============
+* Fixed bugs:
+    * Fixed HTML escaping issue on user account
+    * Fixed fatal error during import
+    * Fixed aggregation of sales rule report data by cron
+    * Fixed an issue with showing HTML tags in messages
+    * Fixed an issue with adding product swatch attributes through the SOAP
+    * Fixed an issue with Admin Action Log archive
+    * Fixed an issue when Rule-based free shipping doesn't work
+* GitHub requests:
+    * [#2453](https://github.com/magento/magento2/issues/2453) -- Fixed an issue when long street addresses are truncated after checkout
+    * [#2628](https://github.com/magento/magento2/issues/2628) -- Fixed an issue with missing shipping data in orders API
+    * [#2852](https://github.com/magento/magento2/issues/2852) -- Fixed an issue where "magento setup:config:set" cleans data
+    * [#2957](https://github.com/magento/magento2/issues/2957) -- Fixed performance issue with products import
+    * [#3233](https://github.com/magento/magento2/issues/3233) -- Fixed an issue with arbitrary PHP code execution in phrases
+    * [#3786](https://github.com/magento/magento2/issues/3786) -- Fixed an issue with ability to brute force API access token
+* Various improvements:
+    * Fixed performance issue with swatches functionality
+    * Fixed issue with redundant requests when customer has shopping cart items
+    * Fixed several security-related issues
+
 2.0.1
 =============
 * Fixed bugs:

@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2015 Magento. All rights reserved.
+ * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -67,7 +67,7 @@ class Factory
      */
     protected $_backendOptions = [
         'hashed_directory_level' => 1,
-        'hashed_directory_umask' => DriverInterface::WRITEABLE_DIRECTORY_MODE,
+        'hashed_directory_umask' => 0777,
         'file_name_prefix' => 'mage',
     ];
 

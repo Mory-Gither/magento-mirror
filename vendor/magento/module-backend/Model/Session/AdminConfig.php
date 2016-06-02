@@ -2,7 +2,7 @@
 /**
  * Backend Session configuration object
  *
- * Copyright © 2015 Magento. All rights reserved.
+ * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 namespace Magento\Backend\Model\Session;
@@ -14,8 +14,6 @@ use Magento\Framework\Session\Config;
 
 /**
  * Magento Backend session configuration
- *
- * @method Config setSaveHandler()
  */
 class AdminConfig extends Config
 {

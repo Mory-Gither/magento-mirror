@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2015 Magento. All rights reserved.
+ * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -211,7 +211,6 @@ class Value extends AbstractModel implements \Magento\Catalog\Api\Data\ProductCu
             if ($this->getData('is_delete') == '1') {
                 if ($this->getId()) {
                     $this->deleteValues($this->getId());
-                    $this->delete();
                 }
             } else {
                 $this->save();

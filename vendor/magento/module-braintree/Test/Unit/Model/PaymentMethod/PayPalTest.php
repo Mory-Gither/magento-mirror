@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2015 Magento. All rights reserved.
+ * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -230,10 +230,12 @@ class PayPalTest extends \PHPUnit_Framework_TestCase
         $paymentMethodNonce = 'nonce';
         $storeInVault = true;
         $data = [
-            'cc_last4' => $ccLast4,
-            'cc_token' => $ccToken,
-            'payment_method_nonce' => $paymentMethodNonce,
-            'store_in_vault' => $storeInVault,
+            'additional_data' => [
+                'cc_last4' => $ccLast4,
+                'cc_token' => $ccToken,
+                'payment_method_nonce' => $paymentMethodNonce,
+                'store_in_vault' => $storeInVault
+            ]
         ];
         $data = new \Magento\Framework\DataObject($data);
         $this->model->setInfoInstance($this->infoInstanceMock);

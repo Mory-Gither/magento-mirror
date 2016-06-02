@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2015 Magento. All rights reserved.
+ * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 namespace Magento\Setup\Test\Unit\Module;
@@ -25,13 +25,6 @@ class ConfigGeneratorTest extends \PHPUnit_Framework_TestCase
         $this->configGeneratorObject = new ConfigGenerator($random, $deployConfig);
     }
 
-    public function testCreateInstallConfig()
-    {
-        $returnValue = $this->configGeneratorObject->createInstallConfig([]);
-        $this->assertInstanceOf('Magento\Framework\Config\Data\ConfigData', $returnValue);
-        $this->assertEquals(ConfigFilePool::APP_ENV, $returnValue->getFileKey());
-    }
-
     public function testCreateCryptConfigWithInput()
     {
         $testData = [ConfigOptionsListConstants::INPUT_KEY_ENCRYPTION_KEY => 'some-test_key'];
@@ -45,6 +38,16 @@ class ConfigGeneratorTest extends \PHPUnit_Framework_TestCase
         $returnValue = $this->configGeneratorObject->createCryptConfig([]);
         $this->assertEquals(ConfigFilePool::APP_ENV, $returnValue->getFileKey());
         $this->assertEquals(['crypt' => ['key' => md5('key')]], $returnValue->getData());
+    }
+
+    /**
+     * @deprecated
+     */
+    public function testCreateInstallConfig()
+    {
+        $returnValue = $this->configGeneratorObject->createInstallConfig([]);
+        $this->assertInstanceOf('Magento\Framework\Config\Data\ConfigData', $returnValue);
+        $this->assertEquals(ConfigFilePool::APP_ENV, $returnValue->getFileKey());
     }
 
     public function testCreateSessionConfigWithInput()

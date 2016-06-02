@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © 2015 Magento. All rights reserved.
+ * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 
@@ -313,9 +313,6 @@ class MarketplaceManager
         return $this->getDirectory()->writeFile(
             DirectoryList::COMPOSER_HOME . DIRECTORY_SEPARATOR . $this->pathToAuthFile,
             $jsonContent
-        ) && $this->getDirectory()->changePermissions(
-            DirectoryList::COMPOSER_HOME . DIRECTORY_SEPARATOR . $this->pathToAuthFile,
-            \Magento\Framework\Filesystem\DriverInterface::WRITEABLE_FILE_MODE
         );
     }
 
